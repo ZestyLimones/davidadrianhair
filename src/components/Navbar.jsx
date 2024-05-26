@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
+import NavLink from './navLink';
 
 const links = [
   { url: '/', title: 'Home' },
@@ -17,9 +18,7 @@ const Navbar = () => {
     <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
       <div className="hidden md:flex gap-4 w-1/3">
         {links.map((link) => (
-          <Link href={link.url} key={link.title}>
-            {link.title}
-          </Link>
+          <NavLink link={link} key={link.title} />
         ))}
       </div>
       <div className="md:hidden lg:flex w-1/3 justify-center">
@@ -35,19 +34,19 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex gap-4 w-1/3">
         <Link href="#">
-          <Image src="/instagram.png" width={24} height={24} />
+          <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
         <Link href="#">
-          <Image src="/facebook.png" width={24} height={24} />
+          <Image src="/facebook.png" alt="" width={24} height={24} />
         </Link>
         <Link href="#">
-          <Image src="/github.png" width={24} height={24} />
+          <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
         <Link href="#">
-          <Image src="/dribbble.png" width={24} height={24} />
+          <Image src="/dribbble.png" alt="" width={24} height={24} />
         </Link>
         <Link href="#">
-          <Image src="/pinterest.png" width={24} height={24} />
+          <Image src="/pinterest.png" alt="" width={24} height={24} />
         </Link>
       </div>
       <div className="md:hidden">
