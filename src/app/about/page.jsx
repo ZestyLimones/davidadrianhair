@@ -11,7 +11,7 @@ const AboutPage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="">
+      <div className="h-full overflow-scroll">
         <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64">
           <div className="flex flex-col gap-12 justify-center">
             <h1 className="font-bold text-2xl">About me</h1>
@@ -82,7 +82,96 @@ const AboutPage = () => {
               ></path>
             </motion.svg>
           </div>
-          <div className="">Experience</div>
+          <div className="flex flex-col gap-12 justify-center pb-48">
+            <h1 className="font-bold text-2xl">Experience</h1>
+            {/* Experince Item 1*/}
+            <div className="flex justify-between h-48">
+              {/* left */}
+              <div className="w-1/3">
+                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Job Title 1
+                </div>
+                <div className="p-3 text-sm italic">
+                  Description: Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Scelerisque varius morbi enim nunc
+                  faucibus a pellentesque sit.
+                </div>
+                <div className="p3 text-red-400 text-sm font-semibold">
+                  2000-2001
+                </div>
+                <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
+                  ABC Company
+                </div>
+              </div>
+              {/* center */}
+              <div className="w-1/6 ">
+                <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                </div>
+              </div>
+              {/* right */}
+              <div className="w-1/3"></div>
+            </div>
+            {/* Experince Item 2*/}
+            <div className="flex justify-between h-48">
+              {/* left */}
+              <div className="w-1/3"></div>
+              {/* center */}
+              <div className="w-1/6 ">
+                <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                </div>
+              </div>
+              {/* right */}
+              <div className="w-1/3">
+                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Job Title 1
+                </div>
+                <div className="p-3 text-sm italic">
+                  Description: Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Scelerisque varius morbi enim nunc
+                  faucibus a pellentesque sit.
+                </div>
+                <div className="p3 text-red-400 text-sm font-semibold">
+                  2000-2001
+                </div>
+                <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
+                  ABC Company
+                </div>
+              </div>
+            </div>
+            {/* Experince Item 3*/}
+            <div className="flex justify-between h-48">
+              {/* left */}
+              <div className="w-1/3">
+                <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  Job Title 1
+                </div>
+                <div className="p-3 text-sm italic">
+                  Description: Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Scelerisque varius morbi enim nunc
+                  faucibus a pellentesque sit.
+                </div>
+                <div className="p3 text-red-400 text-sm font-semibold">
+                  2000-2001
+                </div>
+                <div className="bg-white p-1 rounded text-sm font-semibold w-fit">
+                  ABC Company
+                </div>
+              </div>
+              {/* center */}
+              <div className="w-1/6 ">
+                <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                </div>
+              </div>
+              {/* right */}
+              <div className="w-1/3"></div>
+            </div>
+          </div>
         </div>
 
         <div className="hidden"></div>
