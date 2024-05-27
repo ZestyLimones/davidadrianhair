@@ -59,6 +59,15 @@ const ContactPage = () => {
               </motion.span>
             ))}
             👋🏽
+            <div className=" bg-white rounded mt-10 w-600px h-600px">
+              <iframe
+                // className="w-full h-full"
+                title="Book a consult call"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0hNIYv29ZrS72E0_aJd9fmy-_KuJ_03pcD3nhZIAWiw8dilQDbD5FdupStum2GLmz82hLAi5SE?gv=true"
+                width="400"
+                height="600"
+              ></iframe>
+            </div>
           </div>
         </div>
         <form
