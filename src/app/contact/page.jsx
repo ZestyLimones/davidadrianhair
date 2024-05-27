@@ -1,12 +1,38 @@
 'use client';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
   const text = 'Say Hello';
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setError(false);
+    setSuccess(false);
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setSuccess(true);
+          form.current.reset();
+        },
+        () => {
+          setError(true);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -35,18 +61,26 @@ const ContactPage = () => {
             👋🏽
           </div>
         </div>
-        <div className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+        <form
+          onSubmit={sendEmail}
+          ref={form}
+          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+        >
           <span>Hey David,</span>
           <textarea
             rows={4}
             placeholder="enter message you would like to send"
             className="bg-transparent border-b-2 border-b-black outline-none resize-none content-end"
+            name="user_message"
+            required
           ></textarea>
           <span>Thank you,</span>
           <input
-            type="text"
+            type="email"
             placeholder="enter email address"
             className="bg-transparent border-b-2 border-b-black outline-none"
+            name="user_email"
+            required
           />
 
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
@@ -62,7 +96,7 @@ const ContactPage = () => {
               You message was not sent.
             </span>
           )}
-        </div>
+        </form>
       </div>
     </motion.div>
   );
