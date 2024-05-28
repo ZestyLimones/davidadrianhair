@@ -93,15 +93,6 @@ const Navbar = () => {
         <Link href="#">
           <Image src="/facebook.png" alt="" width={24} height={24} />
         </Link>
-        <Link href="#">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
-        </Link>
       </div>
       <div className="md:hidden">
         <button
