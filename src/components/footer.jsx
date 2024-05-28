@@ -27,7 +27,7 @@ const contactLinks = [
 
 const Footer = () => {
   return (
-    <div className="h-full flex justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl bg-stone-900 text-white">
+    <div className="h-full flex justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl bg-stone-900 text-stone-200">
       <div className="flex flex-col ">
         <h2>Important Links</h2>
         {navLinks.map((link) => (

@@ -64,7 +64,7 @@ const PortfolioPage = () => {
                 className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                 key={item.id}
               >
-                <div className="flex flex-col gap-8 text-white">
+                <div className="flex flex-col gap-8 text-stone-200">
                   <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                     {item.title}
                   </h1>
@@ -75,7 +75,7 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-stone-200 text-gray-600 font-semibold m-4 rounded">
                       See Demo
                     </button>
                   </Link>
@@ -110,7 +110,7 @@ const PortfolioPage = () => {
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-stone-900 text-stone-200 rounded-full flex items-center justify-center"
           >
             Schedule Consult
           </Link>

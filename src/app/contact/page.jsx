@@ -59,7 +59,7 @@ const ContactPage = () => {
               </motion.span>
             ))}
             👋🏽
-            <div className=" bg-white rounded mt-10 w-600px h-600px">
+            <div className=" bg-stone-200 rounded mt-10 w-600px h-600px">
               <iframe
                 // className="w-full h-full"
                 title="Book a consult call"
@@ -79,7 +79,7 @@ const ContactPage = () => {
           <textarea
             rows={4}
             placeholder="enter message you would like to send"
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none content-end"
+            className="bg-transparent border-b-2 border-b-stone-900 outline-none resize-none content-end"
             name="user_message"
             required
           ></textarea>
@@ -87,7 +87,7 @@ const ContactPage = () => {
           <input
             type="email"
             placeholder="enter email address"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            className="bg-transparent border-b-2 border-b-stone-900 outline-none"
             name="user_email"
             required
           />

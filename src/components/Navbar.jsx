@@ -69,31 +69,31 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl bg-yellow-500/90 border-b-2 border-yellow-500">
       <div className="hidden md:flex gap-4 w-1/3">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
       </div>
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+      {/* <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
-          className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
+          className="text-sm bg-stone-900 rounded-md p-1 font-semibold flex items-center justify-center"
         >
-          <span className="text-white mr-1">David Adrian </span>
-          <span className="w-12 h-8 rounded bg-white text-black flex items-center justify-center">
+          <span className="text-stone-200 mr-1">David Adrian </span>
+          <span className="w-12 h-8 rounded bg-stone-200 text-stone-900 flex items-center justify-center">
             Hair
           </span>
         </Link>
-      </div>
-      <div className="hidden md:flex gap-4 w-1/3">
+      </div> */}
+      {/* <div className="hidden md:flex gap-4 w-1/3">
         <Link href="#">
           <Image src="/instagram.png" alt="" width={24} height={24} />
         </Link>
         <Link href="#">
           <Image src="/facebook.png" alt="" width={24} height={24} />
         </Link>
-      </div>
+      </div> */}
       <div className="md:hidden">
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
@@ -102,17 +102,17 @@ const Navbar = () => {
           <motion.div
             variants={topVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-stone-900 rounded origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded"
+            className="w-10 h-1 bg-stone-900 rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-black rounded origin-left"
+            className="w-10 h-1 bg-stone-900 rounded origin-left"
           ></motion.div>
         </button>
         {open && (
@@ -120,7 +120,7 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-stone-900 text-stone-200 flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
               <motion.div
