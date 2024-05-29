@@ -110,7 +110,7 @@ const PortfolioPage = () => {
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-stone-900 text-stone-200 rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-stone-950 text-stone-200 rounded-full flex items-center justify-center"
           >
             Schedule Consult
           </Link>

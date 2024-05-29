@@ -27,21 +27,27 @@ const contactLinks = [
 
 const Footer = () => {
   return (
-    <div className="h-full flex justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl bg-stone-900 text-stone-200">
-      <div className="flex flex-col ">
-        <h2>Important Links</h2>
+    <div className="flex flex-col md:flex-row justify-around  bg-stone-950 text-stone-200 p-5">
+      <div className="flex flex-col pb-8">
+        <h2 className="font-semibold underline decoration-double">
+          Important Links
+        </h2>
         {navLinks.map((link) => (
           <FooterLink link={link} key={link.title} />
         ))}
       </div>
-      <div className="flex flex-col">
-        <h2>Contact Info</h2>
+      <div className="flex flex-col pb-8">
+        <h2 className="font-semibold underline decoration-double">
+          Contact Info
+        </h2>
         {contactLinks.map((link) => (
           <FooterLink link={link} key={link.title} />
         ))}
       </div>
       <div className="flex flex-col">
-        <h2>Social Links</h2>
+        <h2 className="font-semibold underline decoration-double">
+          Social Links
+        </h2>
         {socialLinks.map((link) => (
           <FooterLink link={link} key={link.title} />
         ))}

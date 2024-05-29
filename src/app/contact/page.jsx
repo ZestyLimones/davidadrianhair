@@ -79,7 +79,7 @@ const ContactPage = () => {
           <textarea
             rows={4}
             placeholder="enter message you would like to send"
-            className="bg-transparent border-b-2 border-b-stone-900 outline-none resize-none content-end"
+            className="bg-transparent border-b-2 border-b-stone-950 outline-none resize-none content-end"
             name="user_message"
             required
           ></textarea>
@@ -87,7 +87,7 @@ const ContactPage = () => {
           <input
             type="email"
             placeholder="enter email address"
-            className="bg-transparent border-b-2 border-b-stone-900 outline-none"
+            className="bg-transparent border-b-2 border-b-stone-950 outline-none"
             name="user_email"
             required
           />

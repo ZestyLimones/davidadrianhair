@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import NavLink from './navLink';
@@ -19,10 +19,11 @@ const Navbar = () => {
   const topVariants = {
     closed: {
       rotation: 0,
+      backgroundColor: 'rgb(231 229 228)',
     },
     opened: {
       rotate: 45,
-      backgroundColor: 'rgb(255,255,255)',
+      backgroundColor: 'rgb(231 229 228)',
     },
   };
   const centerVariants = {
@@ -37,10 +38,11 @@ const Navbar = () => {
   const bottomVariants = {
     closed: {
       rotation: 0,
+      backgroundColor: 'rgb(231 229 228)',
     },
     opened: {
       rotate: -45,
-      backgroundColor: 'rgb(255,255,255)',
+      backgroundColor: 'rgb(231 229 228)',
     },
   };
 
@@ -57,43 +59,24 @@ const Navbar = () => {
     },
   };
 
-  const listItemVariants = {
-    closed: {
-      x: -10,
-      opacity: 0,
-    },
-    opened: {
-      x: 0,
-      opacity: 1,
-    },
-  };
+  // const listItemVariants = {
+  //   closed: {
+  //     x: -10,
+  //     opacity: 0,
+  //   },
+  //   opened: {
+  //     x: 0,
+  //     opacity: 1,
+  //   },
+  // };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl bg-yellow-500/90 border-b-2 border-yellow-500">
-      <div className="hidden md:flex gap-4 w-1/3">
+    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+      <div className="hidden md:flex gap-4 text-stone-200">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
       </div>
-      {/* <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
-        <Link
-          href="/"
-          className="text-sm bg-stone-900 rounded-md p-1 font-semibold flex items-center justify-center"
-        >
-          <span className="text-stone-200 mr-1">David Adrian </span>
-          <span className="w-12 h-8 rounded bg-stone-200 text-stone-900 flex items-center justify-center">
-            Hair
-          </span>
-        </Link>
-      </div> */}
-      {/* <div className="hidden md:flex gap-4 w-1/3">
-        <Link href="#">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="#">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
-        </Link>
-      </div> */}
       <div className="md:hidden">
         <button
           className="w-10 h-8 flex flex-col justify-between z-50 relative"
@@ -102,17 +85,17 @@ const Navbar = () => {
           <motion.div
             variants={topVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-stone-900 rounded origin-left"
+            className="w-10 h-1 bg-stone-200 rounded origin-left"
           ></motion.div>
           <motion.div
             variants={centerVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-stone-900 rounded"
+            className="w-10 h-1 bg-stone-200 rounded"
           ></motion.div>
           <motion.div
             variants={bottomVariants}
             animate={open ? 'opened' : 'closed'}
-            className="w-10 h-1 bg-stone-900 rounded origin-left"
+            className="w-10 h-1 bg-stone-200 rounded origin-left"
           ></motion.div>
         </button>
         {open && (
@@ -120,16 +103,14 @@ const Navbar = () => {
             variants={listVariants}
             initial="closed"
             animate="opened"
-            className="absolute top-0 left-0 w-screen h-screen bg-stone-900 text-stone-200 flex flex-col items-center justify-center gap-8 text-4xl z-40"
+            className="absolute top-0 left-0 w-screen h-screen bg-stone-950 text-stone-200 flex flex-col items-center justify-center gap-8 text-4xl z-40"
           >
             {links.map((link) => (
-              <motion.div
-                variants={listItemVariants}
-                className=""
-                key={link.title}
-              >
-                <Link href={link.url}>{link.title}</Link>
-              </motion.div>
+              <div className="" key={link.title}>
+                <Link className="z-10" href={link.url}>
+                  {link.title}
+                </Link>
+              </div>
             ))}
           </motion.div>
         )}
