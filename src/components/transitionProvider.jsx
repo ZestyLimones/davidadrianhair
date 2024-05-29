@@ -19,6 +19,7 @@ const TransitionProvider = ({ children }) => {
         <div
           key={pathName}
           // className="bg-gradient-to-br from-stone-200/50 from 10% via-yellow-500/70 via-30% to-stone-950/70 to-90%"
+          className=""
         >
           <motion.div
             className="h-screen w-screen fixed bg-stone-950 rounded-b-[100px] z-40"
@@ -43,8 +44,10 @@ const TransitionProvider = ({ children }) => {
           <div className="h-24">
             <Navbar />
           </div>
-          <div className="h-[calc(100vh-6rem)]">{children}</div>
-          <Footer />
+          <div className="">{children}</div>
+          <div className="">
+            <Footer />
+          </div>
         </div>
       </div>
     </AnimatePresence>
