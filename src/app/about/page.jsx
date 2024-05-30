@@ -74,7 +74,7 @@ const AboutPage = () => {
                 <p className="text-md">
                   The beauty industry is dynamic and ever-changing, and I am
                   committed to staying on the cutting edge. My education at
-                  [Cosmetology School Name] includes the latest trends and
+                  Denver Cosmetology School includes the latest trends and
                   techniques, and I regularly participate in workshops and
                   seminars to further expand my knowledge. This dedication
                   ensures that I am well-prepared to offer innovative and
@@ -87,7 +87,7 @@ const AboutPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
+          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
             <h1 className="w-28 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30 ">
               Skills
             </h1>
@@ -102,7 +102,7 @@ const AboutPage = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
+          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
             <h1 className="w-48 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30">
               Education
             </h1>
