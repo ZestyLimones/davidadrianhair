@@ -4,21 +4,22 @@ import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-const skills = ['hair1', 'hair2', 'hair3', 'hair4', 'hair5', 'hair6'];
+const skills = [
+  'Precision hair cutting',
+  'Layering',
+  'texturizing',
+  'special occasion styling',
+  'Blowouts',
+  'updos',
+  'Hair coloring',
+  'Highlights',
+  'balayage',
+  'ombre techniques',
+  'Deep conditioning treatments',
+  'Perms and relaxers',
+];
 
 const AboutPage = () => {
-  const skillRef = useRef();
-  const isSkillRefInView = useInView(skillRef, {
-    margin: '-100px',
-    once: true,
-  });
-
-  const experienceRef = useRef();
-  const isExperienceRefInView = useInView(experienceRef, {
-    margin: '-100px',
-    once: true,
-  });
-
   return (
     <motion.div
       className="h-full"
@@ -27,151 +28,92 @@ const AboutPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-full lg:flex">
-        <div className="flex flex-col gap-8 items-center justify-center ">
-          <div className="flex flex-col gap-12 justify-center">
-            <h1 className="font-bold text-2xl text-yellow-500 p-5 rounded-md underline decoration-yellow-200">
-              About me
-            </h1>
-            <p className="text-lg bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <div className="flex flex-col gap-8 justify-center p-2 md:p-10">
+          <div className="flex flex-col md:flex-row h-fit mb-5 gap-8">
+            <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
+              <h1 className="w-48 font-bold text-4xl text-yellow-500 rounded-md bg-stone-950/30 underline decoration-yellow-200">
+                About me
+              </h1>
+              <div className="bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
+                <h2 className="text-lg">Welcome to my Site!</h2>
+                <p className="text-md">
+                  Hi, I’m David, and I am thrilled to share my journey with you.
+                  After honing my organizational and leadership skills as a
+                  logistics coordinator, I decided to follow my true passion for
+                  hairstyling—a love that has been with me since I first started
+                  helping family members with their hair. Now, I am fully
+                  immersed in my dream, currently taking courses at Denver
+                  Cosmetology School and set to graduate next year.
+                </p>
+                <br />
+                <h2 className="text-lg">My Philosophy</h2>
+                <p className="text-md">
+                  I have always believed that hair is a powerful form of
+                  self-expression and that everyone deserves to feel confident
+                  and beautiful. My philosophy centers around creating styles
+                  that not only enhance natural beauty but also reflect
+                  individual personalities. Even as I am learning, my goal
+                  remains the same: to provide each client with a unique and
+                  enjoyable experience, leaving them feeling revitalized and
+                  confident.
+                </p>
+                <br />
+                <h2 className="text-lg">Services Offered</h2>
+                <p className="text-md">
+                  As a budding stylist, I am excited to offer a variety of
+                  services that I am mastering through my coursework and
+                  hands-on practice. These include precision haircuts, coloring,
+                  highlights, and special occasion styling. I also enjoy
+                  providing hair treatments such as deep conditioning and scalp
+                  care. My experience with family and friends has given me a
+                  strong foundation, and I am continuously building on that with
+                  professional training.
+                </p>
+                <br />
+                <h2 className="text-lg">Continual Learning</h2>
+                <p className="text-md">
+                  The beauty industry is dynamic and ever-changing, and I am
+                  committed to staying on the cutting edge. My education at
+                  [Cosmetology School Name] includes the latest trends and
+                  techniques, and I regularly participate in workshops and
+                  seminars to further expand my knowledge. This dedication
+                  ensures that I am well-prepared to offer innovative and
+                  stylish solutions to my clients.
+                </p>
+              </div>
+            </div>
+            <div className="h-96 md:h-full  lg:w-1/2 relative md:m-10 mb-5 shadow-2xl">
+              <Image src="/hero.png" alt="" fill className="object-cover" />
+            </div>
           </div>
-          <div
-            className="flex flex-col gap-12 justify-center bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl"
-            ref={skillRef}
-          >
-            <motion.h1
-              initial={{ x: '-300px' }}
-              animate={isSkillRefInView ? { x: 0 } : {}}
-              transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
-            >
-              SKILLS
-            </motion.h1>
-            <motion.div
-              initial={{ x: '-300px' }}
-              animate={isSkillRefInView ? { x: 0 } : {}}
-              className="flex gap-4 flex-wrap"
-            >
+
+          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
+            <h1 className="w-28 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30 ">
+              Skills
+            </h1>
+            <div className=" flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
               {skills.map((skill) => (
                 <div
                   key={skill}
-                  className="rounded p-2 text-sm cursor-pointer bg-stone-950 text-stone-200 hover:bg-stone-200 hover:text-stone-950"
+                  className="rounded p-2 text-md cursor-pointer bg-stone-950 text-stone-200 hover:bg-stone-200 hover:text-stone-950"
                 >
                   {skill}
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
-          <div
-            className="flex flex-col gap-12 justify-center pb-48 bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl"
-            ref={experienceRef}
-          >
-            <motion.h1
-              initial={{ x: '-300px' }}
-              animate={isExperienceRefInView ? { x: '0' } : {}}
-              transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
-            >
-              Experience
-            </motion.h1>
-            <motion.div
-              initial={{ x: '-300px' }}
-              animate={isExperienceRefInView ? { x: '0' } : {}}
-              className=""
-            >
-              {/* Experince Item 1*/}
-              <div className="flex justify-between h-48">
-                {/* left */}
-                <div className="w-1/3">
-                  <div className="bg-stone-200 p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Job Title 1
-                  </div>
-                  <div className="p-3 text-sm italic">
-                    Description: Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit,
-                  </div>
-                  <div className="p3 text-red-400 text-sm font-semibold">
-                    2000-2001
-                  </div>
-                  <div className="bg-stone-200 p-1 rounded text-sm font-semibold w-fit">
-                    ABC Company
-                  </div>
-                </div>
-                {/* center */}
-                <div className="w-1/6 flex justify-center">
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-stone-200 -left-2"></div>
-                  </div>
-                </div>
-                {/* right */}
-                <div className="w-1/3"></div>
+          <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
+            <h1 className="w-48 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30">
+              Education
+            </h1>
+            <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-200 shadow-2xl justify-between">
+              <div className="p-2 text-lg">
+                <h2 className="">Denver Cosmetology School</h2>
               </div>
-              {/* Experince Item 2*/}
-              <div className="flex justify-between h-48">
-                {/* left */}
-                <div className="w-1/3"></div>
-                {/* center */}
-                <div className="w-1/6 flex justify-center ">
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-stone-200 -left-2"></div>
-                  </div>
-                </div>
-                {/* right */}
-                <div className="w-1/3">
-                  <div className="bg-stone-200 p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Job Title 1
-                  </div>
-                  <div className="p-3 text-sm italic">
-                    Description: Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Scelerisque varius morbi enim nunc
-                    faucibus a pellentesque sit.
-                  </div>
-                  <div className="p3 text-red-400 text-sm font-semibold">
-                    2000-2001
-                  </div>
-                  <div className="bg-stone-200 p-1 rounded text-sm font-semibold w-fit">
-                    ABC Company
-                  </div>
-                </div>
+              <div className="p-2 text-md">
+                <h2 className="">2025</h2>
               </div>
-              {/* Experince Item 3*/}
-              <div className="flex justify-between h-48">
-                {/* left */}
-                <div className="w-1/3">
-                  <div className="bg-stone-200 p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Job Title 1
-                  </div>
-                  <div className="p-3 text-sm italic">
-                    Description: Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Scelerisque varius morbi enim nunc
-                    faucibus a pellentesque sit.
-                  </div>
-                  <div className="p3 text-red-400 text-sm font-semibold">
-                    2000-2001
-                  </div>
-                  <div className="bg-stone-200 p-1 rounded text-sm font-semibold w-fit">
-                    ABC Company
-                  </div>
-                </div>
-                {/* center */}
-                <div className="w-1/6 flex justify-center">
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-stone-200 -left-2"></div>
-                  </div>
-                </div>
-                {/* right */}
-                <div className="w-1/3"></div>
-              </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

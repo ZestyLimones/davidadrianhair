@@ -12,7 +12,7 @@ const Homepage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="h-auto md:h-screen sm:flex flex-col lg:flex-row text-xl items-center justify-around p-2 md:p-10">
+      <div className="h-auto md:h-screen sm:flex flex-col lg:flex-row text-xl items-center p-2 md:p-10">
         <div className="h-96 md:h-full w-full md:w-1/2 relative md:m-10 mb-5 ring-2 ring-yellow-200 rounded-md shadow-2xl">
           <Image src="/david.png" alt="" fill className="object-cover" />
         </div>
