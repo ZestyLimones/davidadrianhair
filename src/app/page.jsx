@@ -13,8 +13,8 @@ const Homepage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-auto md:h-screen sm:flex flex-col lg:flex-row text-xl items-center justify-around p-2 md:p-10">
-        <div className="h-96 md:h-full w-full md:w-1/2 relative  md:m-10 mb-5">
-          <Image src="/hero.png" alt="" fill className="object-contain" />
+        <div className="h-96 md:h-full w-full md:w-1/2 relative md:m-10 mb-5 ring-2 ring-yellow-200 rounded-md shadow-2xl">
+          <Image src="/david.png" alt="" fill className="object-cover" />
         </div>
 
         <div className="lg:w-1/2 flex flex-col gap-8 items-center justify-center bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
