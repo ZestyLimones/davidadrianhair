@@ -39,7 +39,7 @@ const items = [
   },
 ];
 
-const PortfolioPage = () => {
+const GalleryPage = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({ target: ref });
@@ -110,4 +110,4 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default GalleryPage;

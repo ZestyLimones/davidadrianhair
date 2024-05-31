@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'David Adrian Hair',
-  description: 'Portfolio showcasing the amazing hairstyles of David Adrian',
+  description: 'Website showcasing the amazing hairstyles of David Adrian',
 };
 
 export default function RootLayout({ children }) {

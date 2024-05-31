@@ -31,7 +31,7 @@ const Homepage = () => {
           </p>
           <div className="w-full flex gap-4">
             <Link
-              href="/portfolio"
+              href="/gallery"
               className="p-4 rounded-lg ring-1 ring-stone-950 bg-stone-950 text-stone-200"
             >
               View my Work
