@@ -32,7 +32,7 @@ const GalleryPage = () => {
     >
       <div className="h-auto w-full md:h-screen text-xl items-center p-2 md:p-10 justify-center items-center">
         <h1 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
-          Get in Touch
+          Check out My Work
         </h1>
         <div className="h-full flex flex-col lg:flex-row">
           <div className=" h-full w-full flex flex-col items m-2">

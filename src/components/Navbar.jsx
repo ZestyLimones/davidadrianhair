@@ -79,7 +79,7 @@ const Navbar = () => {
       </div>
       <div className="md:hidden">
         <button
-          className="w-10 h-8 flex flex-col justify-between z-50 relative"
+          className="w-10 h-8 flex flex-col justify-between z-30 relative"
           onClick={() => setOpen((prev) => !prev)}
         >
           <motion.div
