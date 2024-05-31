@@ -44,23 +44,21 @@ const ContactPage = () => {
           Get in Touch
         </h1>
         <div className="h-full flex flex-col lg:flex-row">
-          <div className=" h-full lg:w-1/2 flex flex-col items-center text-6xl">
+          <div className=" h-full lg:w-1/2 flex flex-col items-center text-6xl m-2">
             <h1 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
               Schedule a Call
             </h1>
-            <div className="">
-              <div className=" h-100 bg-stone-200 rounded w-600px h-600px">
+            <div className="h-full w-full p-1">
+              <div className="w-full h-96 md:h-2/3 bg-stone-200 rounded">
                 <iframe
                   title="Hair Consult Call with David"
                   src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ17jy5xLqHcU3R1NBwD5mk_9ZSl-vBZl0isqEr5MKOHCxIym02eD6xpPH8vSMk2DUxTKB2xEnkT?gv=true"
-                  width="500"
-                  height="700"
-                  className="bg-stone-200 rounded-md ring-2 ring-yellow-200"
+                  className="h-full w-full bg-stone-200 rounded-md ring-2 ring-yellow-200"
                 ></iframe>
               </div>
             </div>
           </div>
-          <div className="h-full lg:w-1/2 flex flex-col items-center text-6xl">
+          <div className="h-full lg:w-1/2 flex flex-col items-center text-6xl m-2">
             <h1 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
               Send me an email
             </h1>
