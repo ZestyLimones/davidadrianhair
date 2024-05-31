@@ -44,27 +44,12 @@ const ContactPage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
           <div className="">
-            {text.split('').map((letter, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 1 }}
-                animate={{ opacity: 0 }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  delay: index * 0.1,
-                }}
-              >
-                {letter}
-              </motion.span>
-            ))}
-            👋🏽
             <div className=" bg-stone-200 rounded mt-10 w-600px h-600px">
               <iframe
                 // className="w-full h-full"
-                title="Book a consult call"
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0hNIYv29ZrS72E0_aJd9fmy-_KuJ_03pcD3nhZIAWiw8dilQDbD5FdupStum2GLmz82hLAi5SE?gv=true"
-                width="400"
+                title="Hair Consult Call with David"
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ17jy5xLqHcU3R1NBwD5mk_9ZSl-vBZl0isqEr5MKOHCxIym02eD6xpPH8vSMk2DUxTKB2xEnkT?gv=true"
+                width="500"
                 height="600"
               ></iframe>
             </div>

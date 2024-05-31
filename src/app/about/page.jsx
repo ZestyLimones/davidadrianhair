@@ -83,7 +83,7 @@ const AboutPage = () => {
               </div>
             </div>
             <div className="h-96 md:h-full  lg:w-1/2 relative md:m-10 mb-5 shadow-2xl">
-              <Image src="/hero.png" alt="" fill className="object-cover" />
+              <Image src="/david-2.png" alt="" fill className="object-cover" />
             </div>
           </div>
 

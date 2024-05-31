@@ -52,42 +52,32 @@ const PortfolioPage = () => {
       animate={{ y: '0%' }}
       transition={{ duration: 1 }}
     >
-      <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+      <div className="bg-red-500" ref={ref}>
+        <div className=" flex items-center justify-center text-8xl text-center">
           My Works
         </div>
-        <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
+        <div className="">
+          <div className="flex">
+            <div className="h-screen w-screen flex items-center justify-center" />
             {items.map((item) => (
-              <div
-                className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
-                key={item.id}
-              >
+              <div className="" key={item.id}>
                 <div className="flex flex-col gap-8 text-stone-200">
-                  <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
-                    {item.title}
-                  </h1>
-                  <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
-                    <Image src={item.img} alt="" fill />
-                  </div>
-                  <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
-                    {item.desc}
-                  </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-stone-200 text-gray-600 font-semibold m-4 rounded">
-                      See Demo
-                    </button>
+                    {' '}
+                    <div className="">
+                      <Image src={item.img} alt="" height={50} width={50} />
+                    </div>
+                    <p className="">{item.desc}</p>
                   </Link>
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
+      <div className=" flex flex-col gap-16 items-center justify-center text-center">
         <h1 className="text-8xl">
-          Schedule a consult call to get similar look!{' '}
+          Schedule a consult call to get similar look!
         </h1>
         <div className="relative">
           <motion.svg
