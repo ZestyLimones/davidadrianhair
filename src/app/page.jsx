@@ -17,17 +17,28 @@ const Homepage = () => {
           <Image src="/david.png" alt="" fill className="object-cover" />
         </div>
 
-        <div className="lg:w-1/2 flex flex-col gap-8 items-center justify-center bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
+        <div className="lg:w-1/2 flex flex-col gap-4 items-center justify-center bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
           <h1 className="text-2xl md:text-6xl font-bold ">
             Transform Your Look with Expert Styling
           </h1>
-          <p className="text-ms md:text-xl">
+          <p className="text-sm md:text-xl">
             I believe every client deserves a style that not only looks amazing
-            but feels authentically you. I blend artistry with the latest
-            techniques to bring your vision to life. From chic cuts to vibrant
-            colors, Im dedicated to transforming your look with expert precision
-            and personalized care. Step into my salon and step out with
-            confidence—because when you look great, you feel unstoppable.
+            but feels authentically you. With a passion for creativity and a
+            keen eye for detail, I blend artistry with the latest techniques to
+            bring your vision to life. Whether you&apos;re looking for a chic
+            cut, vibrant color, or a complete transformation, I&apos;m dedicated
+            to providing expert precision and personalized care. Each style is
+            crafted to enhance your natural beauty and reflect your unique
+            personality.
+          </p>
+          <p className="text-sm md:text-xl">
+            Step into my salon and step out with confidence—because when you
+            look great, you feel unstoppable. My goal is to create a relaxing
+            and enjoyable experience, ensuring you leave feeling refreshed and
+            revitalized. From the initial consultation to the final reveal,
+            I&apos;m committed to making your hair journey exceptional. Discover
+            the difference that professional, passionate styling can make and
+            let&apos;s transform your look together.
           </p>
           <div className="w-full flex gap-4">
             <Link

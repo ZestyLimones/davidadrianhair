@@ -90,7 +90,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 ">
               Skills
             </h1>
-            <div className="flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
+            {/* <div className="flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
               {skills.map((skill) => (
                 <div
                   key={skill}
@@ -99,6 +99,50 @@ const AboutPage = () => {
                   {skill}
                 </div>
               ))}
+            </div> */}
+            <div className="flex gap-4 bg-yellow-500/90  rounded-md ring-2 ring-yellow-200 shadow-2xl">
+              <table className="table-fixed border-separate border-spacing-2  ">
+                <tbody>
+                  <tr>
+                    <td className="border-r-2 border-stone-200 text-stone-950">
+                      Cutting and Styling:
+                    </td>
+                    <td className="text-stone-">
+                      Precision hair cutting, Layering, Texturizing, Blowouts,
+                      Updos, Special occasion styling
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td className="border-r-2 border-stone-200 text-stone-950">
+                      Coloring:
+                    </td>
+                    <td className="text-stone-">
+                      Hair coloring, Highlights, Balayage, Ombre techniques
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-r-2 border-stone-200 text-stone-950">
+                      Chemical Treatments:
+                    </td>
+                    <td className="text-stone-950">
+                      Perms and relaxers, Keratin treatments, Smoothing and
+                      straightening treatments
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border-r-2 border-stone-200 text-stone-950">
+                      Client Consultation:
+                    </td>
+                    <td className="text-stone-">
+                      Conducting thorough consultations to understand client
+                      needs and preferences, Providing personalized style
+                      recommendations, Advising on hair care and maintenance
+                      routines
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
@@ -107,7 +151,9 @@ const AboutPage = () => {
             </h1>
             <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-200 shadow-2xl justify-between">
               <div className="p-2 text-lg">
-                <h2 className="">Pickens Technical Collage</h2>
+                <h2 className="">
+                  Pickens Technical Collage: Cosmotology Certification
+                </h2>
               </div>
               <div className="p-2 text-md">
                 <h2 className="">2025</h2>

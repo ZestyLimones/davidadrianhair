@@ -36,7 +36,7 @@ const GalleryPage = () => {
           From Vision to Reality: Recent Styles
         </h1>
         <div className="h-full flex flex-col lg:flex-row items-center">
-          <div className="h-auto w-full flex flex-col items p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-200 rounded-md">
+          <div className="h-auto w-full flex flex-col p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-200 rounded-md">
             <h2 className="text-3xl text-stone-950 text-center p-2">
               Explore my latest work, directly from my&nbsp;
               <Link

@@ -10,8 +10,8 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { url: 'facebook.com', title: 'Facebook' },
-  { url: 'instagram.com', title: 'Instagram' },
+  { url: 'https://www.facebook.com/david.villasenor.5851', title: 'Facebook' },
+  { url: 'https://www.instagram.com/davidadrianhair', title: 'Instagram' },
 ];
 
 const contactLinks = [
@@ -20,7 +20,7 @@ const contactLinks = [
     title: 'davidadrianhair@gmail.com',
   },
   {
-    url: 'http://google.com/maps',
+    url: 'https://google.com/maps',
     title: 'Denver, CO',
   },
 ];
@@ -49,7 +49,7 @@ const Footer = () => {
           Social Links
         </h2>
         {socialLinks.map((link) => (
-          <FooterLink link={link} key={link.title} />
+          <FooterLink link={link} key={link.title} target="_blank" />
         ))}
       </div>
     </div>
