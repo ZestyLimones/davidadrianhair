@@ -40,14 +40,14 @@ const ContactPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-auto w-full md:h-screen text-xl items-center p-2 md:p-10 justify-center items-center">
-        <h1 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
+        <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 text-center">
           Get in Touch
         </h1>
         <div className="h-full flex flex-col lg:flex-row">
           <div className=" h-full lg:w-1/2 flex flex-col items-center text-6xl m-2">
-            <h1 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
+            <h2 className="font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 text-center bg-stone-950/30 p-2">
               Schedule a Call
-            </h1>
+            </h2>
             <div className="h-full w-full p-1">
               <div className="w-full h-96 md:h-2/3 bg-stone-200 rounded">
                 <iframe

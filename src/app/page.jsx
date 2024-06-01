@@ -18,7 +18,7 @@ const Homepage = () => {
         </div>
 
         <div className="lg:w-1/2 flex flex-col gap-8 items-center justify-center bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
-          <h1 className="text-2xl md:text-6xl font-bold">
+          <h1 className="text-2xl md:text-6xl font-bold ">
             Transform Your Look with Expert Styling
           </h1>
           <p className="text-ms md:text-xl">

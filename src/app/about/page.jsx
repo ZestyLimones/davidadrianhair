@@ -30,7 +30,7 @@ const AboutPage = () => {
         <div className="flex flex-col gap-8 justify-center p-2 md:p-10">
           <div className="flex flex-col md:flex-row h-fit mb-5 gap-8">
             <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
-              <h1 className="w-48 font-bold text-4xl text-yellow-500 rounded-md bg-stone-950/30 underline decoration-yellow-200">
+              <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500">
                 About me
               </h1>
               <div className="bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
@@ -81,16 +81,16 @@ const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="h-96 md:h-full  lg:w-1/2 relative md:m-10 mb-5 shadow-2xl">
+            <div className="h-96 md:h-full w-full md:w-1/2 relative md:m-10 mb-5 ring-2 ring-yellow-200 rounded-md shadow-2xl">
               <Image src="/david-2.png" alt="" fill className="object-cover" />
             </div>
           </div>
 
           <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
-            <h1 className="w-28 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30 ">
+            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 ">
               Skills
             </h1>
-            <div className=" flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
+            <div className="flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
               {skills.map((skill) => (
                 <div
                   key={skill}
@@ -102,7 +102,7 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
-            <h1 className="w-48 font-bold text-4xl text-yellow-500 rounded-md underline decoration-yellow-200 bg-stone-950/30">
+            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500">
               Education
             </h1>
             <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-200 shadow-2xl justify-between">

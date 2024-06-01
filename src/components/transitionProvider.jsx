@@ -11,16 +11,12 @@ const TransitionProvider = ({ children }) => {
   return (
     <AnimatePresence mode="wait">
       <div
-        className="bg-cover bg-center"
+        className="bg-cover bg-center font-serif"
         style={{
           backgroundImage: `url('https://www.pixelstalk.net/wp-content/uploads/2016/05/Black-and-Gold-Wallpapers-Images-Download.jpg')`,
         }}
       >
-        <div
-          key={pathName}
-          // className="bg-gradient-to-br from-stone-200/50 from 10% via-yellow-500/70 via-30% to-stone-950/70 to-90%"
-          className=""
-        >
+        <div key={pathName}>
           <motion.div
             className="h-screen w-screen fixed bg-stone-950 rounded-b-[100px] z-40"
             animate={{ height: '0vh' }}
@@ -33,9 +29,7 @@ const TransitionProvider = ({ children }) => {
             animate={{ opacity: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-          >
-            {pathName.substring(1)}
-          </motion.div>
+          ></motion.div>
           <motion.div
             className="h-screen w-screen fixed bg-stone-950 rounded-t-[100px] bottom-0 z-30"
             initial={{ height: '140vh' }}
