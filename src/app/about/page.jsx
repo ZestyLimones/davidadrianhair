@@ -41,8 +41,8 @@ const AboutPage = () => {
                   logistics coordinator, I decided to follow my true passion for
                   hairstyling—a love that has been with me since I first started
                   helping family members with their hair. Now, I am fully
-                  immersed in my dream, currently taking courses at Denver
-                  Cosmetology School and set to graduate next year.
+                  immersed in my dream, currently taking courses at Pickens
+                  Technical Collage and set to graduate next year.
                 </p>
                 <br />
                 <h2 className="text-lg">My Philosophy</h2>
@@ -73,7 +73,7 @@ const AboutPage = () => {
                 <p className="text-md">
                   The beauty industry is dynamic and ever-changing, and I am
                   committed to staying on the cutting edge. My education at
-                  Denver Cosmetology School includes the latest trends and
+                  Pickens Technical Collage includes the latest trends and
                   techniques, and I regularly participate in workshops and
                   seminars to further expand my knowledge. This dedication
                   ensures that I am well-prepared to offer innovative and
@@ -107,7 +107,7 @@ const AboutPage = () => {
             </h1>
             <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-200 shadow-2xl justify-between">
               <div className="p-2 text-lg">
-                <h2 className="">Denver Cosmetology School</h2>
+                <h2 className="">Pickens Technical Collage</h2>
               </div>
               <div className="p-2 text-md">
                 <h2 className="">2025</h2>

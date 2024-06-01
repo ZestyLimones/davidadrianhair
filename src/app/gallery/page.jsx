@@ -46,7 +46,11 @@ const GalleryPage = () => {
                   key={item.id}
                 >
                   <div className="h-full flex gap-8 text-stone-200 justify-center text-center ">
-                    <Link href={item.permalink} className="relative">
+                    <Link
+                      href={item.permalink}
+                      className="relative"
+                      target="_blank"
+                    >
                       <div className="">
                         <Image
                           src={item.media_url}
@@ -56,7 +60,7 @@ const GalleryPage = () => {
                           className="object-contain"
                         />
                       </div>
-                      <p className="mt-5">{item.caption}</p>
+                      <p>Click to check out on the details on my Instagram</p>
                     </Link>
                   </div>
                 </div>
