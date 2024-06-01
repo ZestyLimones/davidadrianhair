@@ -40,10 +40,10 @@ const ContactPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-auto lg:h-screen w-full p-2 md:p-10 flex flex-col items-center gap-8">
-        <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 text-center">
+        <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-600 text-center">
           Get in Touch: Let&apos;s Create Your Perfect Look!
         </h1>
-        <div className="h-full w-full flex flex-col lg:flex-row p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-200 rounded-md gap-2">
+        <div className="h-full w-full flex flex-col lg:flex-row p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-600 rounded-md gap-2">
           <div className=" h-auto lg:w-1/2 flex flex-col items-center justify-center gap-8 text-6xl m-2 border-b-2 lg:border-b-0 lg:border-r-2 border-stone-200 pb-2 lg:pb-0 lg:pr-4  ">
             <h2 className="text-3xl text-stone-950 text-center p-2 ">
               Ready for a Hair Transformation? Schedule Your Appointment Today!
@@ -63,7 +63,7 @@ const ContactPage = () => {
                 <iframe
                   title="Hair Consult Call with David"
                   src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ17jy5xLqHcU3R1NBwD5mk_9ZSl-vBZl0isqEr5MKOHCxIym02eD6xpPH8vSMk2DUxTKB2xEnkT?gv=true"
-                  className="h-full w-full bg-stone-200 rounded-md ring-2 ring-yellow-200"
+                  className="h-full w-full bg-stone-200 rounded-md ring-2 ring-yellow-600"
                 ></iframe>
               </div>
             </div>
@@ -83,7 +83,7 @@ const ContactPage = () => {
             <form
               onSubmit={sendEmail}
               ref={form}
-              className="h-full w-full bg-red-500 rounded-xl text-xl flex flex-col gap-8 justify-center p-8 bg-stone-200 text-stone-950 rounded-md ring-2 ring-yellow-200"
+              className="h-full w-full bg-red-500 rounded-xl text-xl flex flex-col gap-8 justify-center p-8 bg-stone-200 text-stone-950 rounded-md ring-2 ring-yellow-600"
             >
               <span>Hey David,</span>
               <textarea
@@ -109,7 +109,7 @@ const ContactPage = () => {
                 required
               />
 
-              <button className="bg-yellow-500 ring-2 ring-yellow-200 rounded font-semibold text-stone-950 p-4">
+              <button className="bg-yellow-500 ring-2 ring-yellow-600 rounded font-semibold text-stone-950 p-4">
                 Send
               </button>
               {success && (

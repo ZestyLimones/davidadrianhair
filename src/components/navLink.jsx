@@ -10,7 +10,7 @@ const NavLink = ({ link }) => {
     <Link
       className={`rounded-md p-1 ${
         pathName === link.url &&
-        'bg-yellow-500 text-stone-950 ring-yellow-200 ring-2'
+        'bg-yellow-500 text-stone-950 ring-yellow-600 ring-2'
       }`}
       href={link.url}
     >

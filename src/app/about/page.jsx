@@ -30,10 +30,10 @@ const AboutPage = () => {
         <div className="flex flex-col gap-8 justify-center p-2 md:p-10">
           <div className="flex flex-col md:flex-row h-fit mb-5 gap-8">
             <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-1/2">
-              <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500">
+              <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-600">
                 About me
               </h1>
-              <div className="bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
+              <div className="bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-600 shadow-2xl">
                 <h2 className="text-lg">Welcome to my Site!</h2>
                 <p className="text-md">
                   Hi, I’m David, and I am thrilled to share my journey with you.
@@ -81,26 +81,16 @@ const AboutPage = () => {
                 </p>
               </div>
             </div>
-            <div className="h-96 md:h-full w-full md:w-1/2 relative md:m-10 mb-5 ring-2 ring-yellow-200 rounded-md shadow-2xl">
+            <div className="h-96 md:h-full w-full md:w-1/2 relative md:m-10 mb-5 ring-2 ring-yellow-600 rounded-md shadow-2xl">
               <Image src="/david-2.png" alt="" fill className="object-cover" />
             </div>
           </div>
 
           <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
-            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 ">
+            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-600 ">
               Skills
             </h1>
-            {/* <div className="flex gap-4 flex-wrap bg-yellow-500/90 p-5 rounded-md ring-2 ring-yellow-200 shadow-2xl">
-              {skills.map((skill) => (
-                <div
-                  key={skill}
-                  className="rounded p-2 text-md cursor-pointer bg-stone-950 text-stone-200 hover:bg-stone-200 hover:text-stone-950"
-                >
-                  {skill}
-                </div>
-              ))}
-            </div> */}
-            <div className="flex gap-4 bg-yellow-500/90  rounded-md ring-2 ring-yellow-200 shadow-2xl">
+            <div className="flex gap-4 bg-yellow-500/90  rounded-md ring-2 ring-yellow-600 shadow-2xl">
               <table className="table-fixed border-separate border-spacing-2  ">
                 <tbody>
                   <tr>
@@ -146,10 +136,10 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 justify-center h-96 h-full w-full lg:w-2/3">
-            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500">
+            <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-600">
               Education
             </h1>
-            <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-200 shadow-2xl justify-between">
+            <div className="flex gap-4 bg-yellow-500/90 p-2 rounded-md ring-2 ring-yellow-600 shadow-2xl justify-between">
               <div className="p-2 text-lg">
                 <h2 className="">
                   Pickens Technical Collage: Cosmotology Certification

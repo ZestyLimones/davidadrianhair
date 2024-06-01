@@ -32,17 +32,17 @@ const GalleryPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-auto w-full p-2 md:p-10 flex flex-col items-center gap-8">
-        <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-500 text-center p-2">
+        <h1 className="font-bold text-4xl text-stone-200 underline decoration-yellow-600 text-center p-2">
           From Vision to Reality: Recent Styles
         </h1>
         <div className="h-full flex flex-col lg:flex-row items-center">
-          <div className="h-auto w-full flex flex-col p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-200 rounded-md">
+          <div className="h-auto w-full flex flex-col p-2 bg-yellow-500/90 shadow-2xl ring-2 ring-yellow-600 rounded-md">
             <h2 className="text-3xl text-stone-950 text-center p-2">
               Explore my latest work, directly from my&nbsp;
               <Link
                 href="https://www.instagram.com/davidadrianhair"
                 target="_blank"
-                className="text-bold underline decoration-yellow-200 text-stone-200"
+                className="text-bold underline decoration-yellow-600 text-stone-200"
               >
                 Instagram Feed
               </Link>
@@ -52,7 +52,7 @@ const GalleryPage = () => {
             <div className="flex flex-col lg:flex-row h-full gap-4 p-2">
               {igData.map((item) => (
                 <div
-                  className="p-5 w-full lg:w-1/3 h-auto bg-stone-950 ring-2 ring-yellow-200 rounded-md"
+                  className="p-5 w-full lg:w-1/3 h-auto bg-stone-950 ring-2 ring-yellow-600 rounded-md"
                   key={item.id}
                 >
                   <div className="h-full flex gap-8 text-stone-200 justify-center text-center ">
