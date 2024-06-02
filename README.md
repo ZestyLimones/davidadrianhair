@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# David Adrian Hair Website
 
-## Getting Started
+Welcome to the official website for David Adrian Hair, where expert styling meets your hair dreams. This website serves as a hub for booking appointments, viewing a gallery of recent work, and learning more about the services offered.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This website is designed to provide an online presence for David Adrian Hair, offering a seamless way for clients to book consultations and appointments, view a portfolio of work, and connect with the hairstylist. The goal is to enhance client interaction and streamline the appointment booking process.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Landing Page**: Introduces the hairstylist and their philosophy.
+- **Gallery of Transformations**: Displays recent work with a link to the full set on Instagram.
+- **Appointment Scheduler**: Allows clients to book 15-minute Google Meet consultations.
+- **Contact Page**: Provides a contact form for inquiries and appointment requests.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this website locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/yourusername/hairstylist-website.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd hairstylist-website
+   ```
+
+3. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server::**
+
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+Transform Your Look with Expert Styling
+
+I believe every client deserves a style that not only looks amazing but feels authentically you. With a passion for creativity and a keen eye for detail, I blend artistry with the latest techniques to bring your vision to life. Whether you're looking for a chic cut, vibrant color, or a complete transformation, I'm dedicated to providing expert precision and personalized care. Each style is crafted to enhance your natural beauty and reflect your unique personality.
+
+Step into my salon and step out with confidence—because when you look great, you feel unstoppable. My goal is to create a relaxing and enjoyable experience, ensuring you leave feeling refreshed and revitalized. From the initial consultation to the final reveal, I'm committed to making your hair journey exceptional. Discover the difference that professional, passionate styling can make and let’s transform your look together.
+
+Booking Consultations
+
+Ready to take the next step towards your dream hair? Schedule a 15-minute Google Meet video call to discuss your hair goals and preferences. During the consultation, we’ll chat about your vision, review any inspiration photos or videos you have, and plan your perfect style. Once we’ve discussed your ideas, we’ll book your appointment to bring your dream hair to life.
+
+Contacting the Stylist
+
+Have a question or need more information? Fill out the contact form, and I’ll get back to you as soon as possible. Let’s start a conversation and make your hair dreams a reality!
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
